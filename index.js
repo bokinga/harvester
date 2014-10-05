@@ -99,8 +99,10 @@ Harvester.prototype._onSocketConnected = function _onSocketConnected() {
     version: process.version,
     architecture: process.arch,
     platform: process.platform,
+    hostName: os.hostname(),
     pid: process.pid,
     ip: this._getIPAddresses(),
+    ram: (os.totalmem()/1024/1024/1024) + 'gb',
     cpus: {
       count: cpus.length,
       type: (cpus.length > 0) ? cpus[0].model : 'unknown'
@@ -108,7 +110,7 @@ Harvester.prototype._onSocketConnected = function _onSocketConnected() {
   });
 
   // interval harvesters
-  this.startHarvesting('health', 3000, this._monitorHealth.bind(this));
+  this.startHarvesting('health', 5000, this._monitorHealth.bind(this));
   this.startHarvesting('process.info', 60000, this._monitorProcessInfo.bind(this));
 };
 
