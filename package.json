@@ -9,7 +9,6 @@
     "bluebird": "^2.3.4",
     "extend": "^2.0.0",
     "lodash": "^2.4.1",
-    "measured": "^0.1.6",
     "microtime": "^1.0.1",
     "socket.io-client": "^1.1.0",
     "usage": "^0.4.13"
