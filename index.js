@@ -193,4 +193,7 @@ Harvester.prototype.applyFilters = function applyFilters(/* name, data */) {
   return data;
 };
 
-exports = module.exports = Harvester;
+exports = module.exports = function(opts) {
+  opts = opts || {};
+  return new Harvester(opts);
+};

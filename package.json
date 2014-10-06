@@ -1,6 +1,6 @@
 {
   "name": "harvester",
-  "version": "0.0.3",
+  "version": "0.0.4",
   "description": "Harvester is a tool that aims to make realtime server monitoring (in node) as easy as possible",
   "homepage": "https://github.com/carldanley/harvester",
   "main": "index.js",
