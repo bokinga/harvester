@@ -1,12 +1,12 @@
 {
   "name": "harvester",
-  "version": "0.0.4",
+  "version": "0.0.5",
   "description": "Harvester is a tool that aims to make realtime server monitoring (in node) as easy as possible",
   "homepage": "https://github.com/carldanley/harvester",
   "main": "index.js",
   "repository": {
     "type": "git",
-    "url": "git@github.com:carldanley/harvester.git"
+    "url": "https://github.com/carldanley/harvester.git"
   },
   "author": {
     "name": "Carl Danley",
@@ -19,6 +19,7 @@
   "engines": {
     "node": ">= 0.10.32"
   },
+  "homepage": "https://github.com/carldanley/harvester",
   "dependencies": {
     "bluebird": "^2.3.4",
     "extend": "^2.0.0",
